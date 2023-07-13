@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Mars.cpp" />
+    <ClCompile Include="MarsDlg.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="multimedia/AecKsBinder.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/BufferedReceiver.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/BypassVCodec.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/CameraVideoStream.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/H264VCodec.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/BypassACodec.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/litevad.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/MICAudioStream.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/MjpegVCodec.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/MultimediaManager.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/MultimediaControl.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/MultimediaStreamReceiver.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/OPUSACodec.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/PCMRepeater.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/RemoteAudioStream.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/RemoteVideoStream.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/SpeakerRenderer.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="multimedia/WaveWriter.cpp">
+      <Filter>multimedia\src</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Packet.cpp">
+      <Filter>net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Participant.cpp">
+      <Filter>net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="net\StreamBuffer.cpp">
+      <Filter>net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="net\StreamControllerImpl.cpp">
+      <Filter>net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="CConferenceInfo.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsAlertLoginDlg.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsCamTestDlg.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsConferenceDlg.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsContactDlg.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsFunctions.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsMainDlg.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsMeetingDlg.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsRegisterDlg.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsResetPasswordDlg.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsSettingsDlg.cpp">
+    </ClCompile>
+    <ClCompile Include="CommonUtils.cpp">
+    </ClCompile>
+    <ClCompile Include="CParticipant.cpp">
+    </ClCompile>
+    <ClCompile Include="CRest.cpp">
+    </ClCompile>
+    <ClCompile Include="CUserInfo.cpp">
+    </ClCompile>
+    <ClCompile Include="CMarsIncomingCallDlg.cpp" />
+    <ClCompile Include="net\SessionControllerImpl.cpp">
+      <Filter>net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Notification.cpp">
+      <Filter>net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="CMarsAdminDialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CUserInfo.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Mars.h" />
+    <ClInclude Include="MarsDlg.h" />
+    <ClInclude Include="MarsLog.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="multimedia\Codec.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/AecKsBinder.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/AudioChunk.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/AudioEventHandler.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/AudioStream.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/BypassACodec.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/BypassVCodec.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/CameraVideoStream.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/BufferedReceiver.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/H264VCodec.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/litevad.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/MICAudioStream.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/MICBuffer.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/MjpegVCodec.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/MultimediaControl.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/MultimediaManager.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/MultimediaStreamReceiver.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/MultimediaStreamSender.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/OPUSACodec.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/PCMRepeater.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/RemoteAudioStream.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/RemoteVideoStream.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/SpeakerRenderer.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/VideoEventHandler.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/VideoFrame.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/VideoStream.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="multimedia/WaveWriter.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+    <ClInclude Include="net\NetCommon.h">
+      <Filter>net\header</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Packet.h">
+      <Filter>net\header</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Participant.h">
+      <Filter>net\header</Filter>
+    </ClInclude>
+    <ClInclude Include="net\StreamBuffer.h">
+      <Filter>net\header</Filter>
+    </ClInclude>
+    <ClInclude Include="net\StreamController.h">
+      <Filter>net\header</Filter>
+    </ClInclude>
+    <ClInclude Include="net\StreamControllerImpl.h">
+      <Filter>net\header</Filter>
+    </ClInclude>
+    <ClInclude Include="CConferenceInfo.h">
+    </ClInclude>
+    <ClInclude Include="CMarsAlertLoginDlg.h">
+    </ClInclude>
+    <ClInclude Include="CMarsCamTestDlg.h">
+    </ClInclude>
+    <ClInclude Include="CMarsConferenceDlg.h">
+    </ClInclude>
+    <ClInclude Include="CMarsContactDlg.h">
+    </ClInclude>
+    <ClInclude Include="CMarsFunctions.h">
+    </ClInclude>
+    <ClInclude Include="CMarsMainDlg.h">
+    </ClInclude>
+    <ClInclude Include="CMarsMeetingDlg.h">
+    </ClInclude>
+    <ClInclude Include="CMarsRegisterDlg.h">
+    </ClInclude>
+    <ClInclude Include="CMarsResetPasswordDlg.h">
+    </ClInclude>
+    <ClInclude Include="CMarsSettingsDlg.h">
+    </ClInclude>
+    <ClInclude Include="CommonUtils.h">
+    </ClInclude>
+    <ClInclude Include="CParticipant.h">
+    </ClInclude>
+    <ClInclude Include="CRest.h">
+    </ClInclude>
+    <ClInclude Include="net\SessionController.h">
+      <Filter>net\header</Filter>
+    </ClInclude>
+    <ClInclude Include="CMarsIncomingCallDlg.h" />
+    <ClInclude Include="CMarsConferenceEventHandler.h" />
+    <ClInclude Include="CMarsSessionManager.h" />
+    <ClInclude Include="net\SessionControllerImpl.h">
+      <Filter>net\header</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Notification.h">
+      <Filter>net\header</Filter>
+    </ClInclude>
+    <ClInclude Include="CMarsAdminDialog.h" />
+    <ClInclude Include="multimedia/TimeRing.h">
+      <Filter>multimedia\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Mars.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Mars.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Mars.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="multimedia">
+      <UniqueIdentifier>{853722af-9f92-4612-8d27-66de7843829b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="multimedia\src">
+      <UniqueIdentifier>{1fd80941-2b45-4cb3-a8bf-5b8d949d1ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="multimedia\header">
+      <UniqueIdentifier>{a084eeef-ead6-422f-8718-625ae0cb0db5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{8e664aa0-c75e-449f-a738-6a02505ed36c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\src">
+      <UniqueIdentifier>{6f75e5c1-1220-49ba-9f8e-ead84fc068fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\header">
+      <UniqueIdentifier>{43cb7b88-540b-4ed9-8aa5-a8c7567ea1af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

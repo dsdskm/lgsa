@@ -1,0 +1,19 @@
+[2023. 7. 12. 오후 2:22:31][db] mysql connected
+[2023. 7. 12. 오후 2:22:37][response] 200
+[2023. 7. 12. 오후 2:22:37][app] apiUrl=http://localhost:3000/, caller ip=10.177.252.196, body={}
+[2023. 7. 12. 오후 9:51:56][db] mysql connected
+[2023. 7. 12. 오후 9:52:31][db] mysql connected
+[2023. 7. 12. 오후 10:00:52][db] mysql connected
+[2023. 7. 12. 오후 10:11:54][db] mysql connected
+[2023. 7. 12. 오후 10:13:15][db] mysql connected
+[2023. 7. 12. 오후 10:15:40][db] mysql connected
+[2023. 7. 12. 오후 10:26:49][db] mysql connected
+[2023. 7. 12. 오후 10:27:14][db] mysql connected
+[2023. 7. 12. 오후 10:42:16][db] mysql connected
+[2023. 7. 12. 오후 10:42:26][db] mysql connected
+[2023. 7. 12. 오후 10:43:47][db] mysql connected
+[2023. 7. 12. 오후 10:44:03][db] mysql connected
+[2023. 7. 12. 오후 10:44:08][db] mysql connected
+[2023. 7. 12. 오후 10:50:48][db] mysql connected
+[2023. 7. 12. 오후 10:50:53][db] mysql connected
+[2023. 7. 12. 오후 10:51:01][db] mysql connected

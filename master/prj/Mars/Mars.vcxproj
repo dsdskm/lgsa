@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{074341D6-0C2D-463E-A195-1D8C209A1E4B}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>Mars</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);..\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\opencv\build\x64\vc16\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world470d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\opencv\build\x64\vc16\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world470d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CMarsAdminDialog.h" />
+    <ClInclude Include="CMarsIncomingCallDlg.h" />
+    <ClInclude Include="net\Notification.h" />
+    <ClInclude Include="net\SessionController.h" />
+    <ClInclude Include="CMarsConferenceEventHandler.h" />
+    <ClInclude Include="CMarsSessionManager.h" />
+    <ClInclude Include="net\SessionControllerImpl.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="CConferenceInfo.h" />
+    <ClInclude Include="CMarsAlertLoginDlg.h" />
+    <ClInclude Include="CMarsCamTestDlg.h" />
+    <ClInclude Include="CMarsConferenceDlg.h" />
+    <ClInclude Include="CMarsContactDlg.h" />
+    <ClInclude Include="CMarsFunctions.h" />
+    <ClInclude Include="CMarsMainDlg.h" />
+    <ClInclude Include="CMarsMeetingDlg.h" />
+    <ClInclude Include="CMarsRegisterDlg.h" />
+    <ClInclude Include="CMarsResetPasswordDlg.h" />
+    <ClInclude Include="CMarsSettingsDlg.h" />
+    <ClInclude Include="multimedia\Codec.h" />
+    <ClInclude Include="CommonUtils.h" />
+    <ClInclude Include="CParticipant.h" />
+    <ClInclude Include="CRest.h" />
+    <ClInclude Include="CUserInfo.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Mars.h" />
+    <ClInclude Include="MarsDlg.h" />
+    <ClInclude Include="MarsLog.h" />
+    <ClInclude Include="multimedia/AecKsBinder.h" />
+    <ClInclude Include="multimedia/AudioChunk.h" />
+    <ClInclude Include="multimedia/AudioEventHandler.h" />
+    <ClInclude Include="multimedia/AudioStream.h" />
+    <ClInclude Include="multimedia/BufferedReceiver.h" />
+    <ClInclude Include="multimedia/BypassACodec.h" />
+    <ClInclude Include="multimedia/BypassVCodec.h" />
+    <ClInclude Include="multimedia/CameraVideoStream.h" />
+    <ClInclude Include="multimedia/H264VCodec.h" />
+    <ClInclude Include="multimedia/litevad.h" />
+    <ClInclude Include="multimedia/MICAudioStream.h" />
+    <ClInclude Include="multimedia/MICBuffer.h" />
+    <ClInclude Include="multimedia/MjpegVCodec.h" />
+    <ClInclude Include="multimedia/MultimediaControl.h" />
+    <ClInclude Include="multimedia/MultimediaManager.h" />
+    <ClInclude Include="multimedia/MultimediaStreamReceiver.h" />
+    <ClInclude Include="multimedia/MultimediaStreamSender.h" />
+    <ClInclude Include="multimedia/OPUSACodec.h" />
+    <ClInclude Include="multimedia/PCMRepeater.h" />
+    <ClInclude Include="multimedia/RemoteAudioStream.h" />
+    <ClInclude Include="multimedia/RemoteVideoStream.h" />
+    <ClInclude Include="multimedia/SpeakerRenderer.h" />
+    <ClInclude Include="multimedia/VideoEventHandler.h" />
+    <ClInclude Include="multimedia/VideoFrame.h" />
+    <ClInclude Include="multimedia/VideoStream.h" />
+    <ClInclude Include="multimedia/WaveWriter.h" />
+    <ClInclude Include="multimedia/TimeRing.h" />
+    <ClInclude Include="net\NetCommon.h" />
+    <ClInclude Include="net\Packet.h" />
+    <ClInclude Include="net\Participant.h" />
+    <ClInclude Include="net\StreamBuffer.h" />
+    <ClInclude Include="net\StreamController.h" />
+    <ClInclude Include="net\StreamControllerImpl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CConferenceInfo.cpp" />
+    <ClCompile Include="CMarsAdminDialog.cpp" />
+    <ClCompile Include="CMarsAlertLoginDlg.cpp" />
+    <ClCompile Include="CMarsCamTestDlg.cpp" />
+    <ClCompile Include="CMarsConferenceDlg.cpp" />
+    <ClCompile Include="CMarsContactDlg.cpp" />
+    <ClCompile Include="CMarsFunctions.cpp" />
+    <ClCompile Include="CMarsIncomingCallDlg.cpp" />
+    <ClCompile Include="CMarsMainDlg.cpp" />
+    <ClCompile Include="CMarsMeetingDlg.cpp" />
+    <ClCompile Include="CMarsRegisterDlg.cpp" />
+    <ClCompile Include="CMarsResetPasswordDlg.cpp" />
+    <ClCompile Include="CMarsSettingsDlg.cpp" />
+    <ClCompile Include="CParticipant.cpp" />
+    <ClCompile Include="CRest.cpp" />
+    <ClCompile Include="CUserInfo.cpp" />
+    <ClCompile Include="Mars.cpp" />
+    <ClCompile Include="MarsDlg.cpp" />
+    <ClCompile Include="CommonUtils.cpp" />
+    <ClCompile Include="net\Notification.cpp" />
+    <ClCompile Include="net\SessionControllerImpl.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="multimedia/AecKsBinder.cpp" />
+    <ClCompile Include="multimedia/BufferedReceiver.cpp" />
+    <ClCompile Include="multimedia/BypassACodec.cpp" />
+    <ClCompile Include="multimedia/BypassVCodec.cpp" />
+    <ClCompile Include="multimedia/H264VCodec.cpp" />
+    <ClCompile Include="multimedia/litevad.cpp" />
+    <ClCompile Include="multimedia/MICAudioStream.cpp" />
+    <ClCompile Include="multimedia/MjpegVCodec.cpp" />
+    <ClCompile Include="multimedia/MultimediaControl.cpp" />
+    <ClCompile Include="multimedia/MultimediaStreamReceiver.cpp" />
+    <ClCompile Include="multimedia/MultimediaManager.cpp" />
+    <ClCompile Include="multimedia/CameraVideoStream.cpp" />
+    <ClCompile Include="multimedia/PCMRepeater.cpp" />
+    <ClCompile Include="multimedia/RemoteAudioStream.cpp" />
+    <ClCompile Include="multimedia/RemoteVideoStream.cpp" />
+    <ClCompile Include="multimedia/SpeakerRenderer.cpp" />
+    <ClCompile Include="multimedia/WaveWriter.cpp" />
+    <ClCompile Include="multimedia/OPUSACodec.cpp" />
+    <ClCompile Include="net\Packet.cpp" />
+    <ClCompile Include="net\Participant.cpp" />
+    <ClCompile Include="net\StreamBuffer.cpp" />
+    <ClCompile Include="net\StreamControllerImpl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Mars.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Mars.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Mars.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

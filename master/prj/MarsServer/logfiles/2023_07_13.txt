@@ -1,0 +1,1 @@
+[2023. 7. 13. 오전 8:56:32][db] mysql connected
